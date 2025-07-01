@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://httpbin.org/post
+    body:
+      encoding: UTF-8
+      string: '{"key":"value"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - WiktionaryDictionary/0.1.0 (Ruby 3.3.8)
+      Host:
+      - httpbin.org
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 Jul 2025 06:29:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '537'
+      Connection:
+      - keep-alive
+      Server:
+      - gunicorn/19.9.0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: "{\n  \"args\": {}, \n  \"data\": \"{\\\"key\\\":\\\"value\\\"}\", \n
+        \ \"files\": {}, \n  \"form\": {}, \n  \"headers\": {\n    \"Accept\": \"application/json\",
+        \n    \"Accept-Encoding\": \"gzip;q=1.0,deflate;q=0.6,identity;q=0.3\", \n
+        \   \"Content-Length\": \"15\", \n    \"Content-Type\": \"application/json\",
+        \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"WiktionaryDictionary/0.1.0
+        (Ruby 3.3.8)\", \n    \"X-Amzn-Trace-Id\": \"Root=1-68638043-04b8ca03328319411024edb2\"\n
+        \ }, \n  \"json\": {\n    \"key\": \"value\"\n  }, \n  \"origin\": \"192.186.103.98\",
+        \n  \"url\": \"https://httpbin.org/post\"\n}\n"
+  recorded_at: Tue, 01 Jul 2025 06:29:23 GMT
+recorded_with: VCR 6.3.1

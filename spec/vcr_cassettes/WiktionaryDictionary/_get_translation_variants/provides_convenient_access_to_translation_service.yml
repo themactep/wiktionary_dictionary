@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mymemory.translated.net/get?langpair=ru%7Cen&q=%D0%BB%D1%83%D0%BA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - WiktionaryDictionary/0.1.0 (Ruby 3.3.8)
+      Host:
+      - api.mymemory.translated.net
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 Jul 2025 06:42:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1161'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      X-Backend-Content-Length:
+      - '10'
+      X-Embedded-Status:
+      - '200'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"responseData":{"translatedText":"onion","match":1},"quotaFinished":false,"mtLangSupported":null,"responseDetails":"","responseStatus":200,"responderId":null,"exception_code":null,"matches":[{"id":"894349376","segment":"\u043b\u0443\u043a","translation":"onion","source":"ru-RU","target":"en-GB","quality":"74","reference":null,"usage-count":2,"subject":"All","created-by":"MateCat","last-updated-by":"MateCat","create-date":"2024-04-15
+        14:14:09","last-update-date":"2024-04-15 14:14:09","match":1,"penalty":0},{"id":"890172439","segment":"\u041b\u0443\u043a","translation":"Bow","source":"ru-RU","target":"en-GB","quality":"74","reference":null,"usage-count":8,"subject":"All","created-by":"MateCat","last-updated-by":"MateCat","create-date":"2022-12-08
+        07:03:49","last-update-date":"2022-12-08 07:03:49","match":0.98,"penalty":0},{"id":"429785087","segment":"\u041b\u0423\u041a","translation":"Allium","source":"ru-RU","target":"en-GB","quality":"0","reference":null,"usage-count":3,"subject":"Medical","created-by":"MateCat","last-updated-by":"MateCat","create-date":"2014-12-09
+        12:50:10","last-update-date":"2014-12-09 12:50:10","match":0.98,"penalty":0}]}'
+  recorded_at: Tue, 01 Jul 2025 06:42:57 GMT
+recorded_with: VCR 6.3.1

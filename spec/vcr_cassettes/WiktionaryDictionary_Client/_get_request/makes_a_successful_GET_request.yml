@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://httpbin.org/get?test=value
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - WiktionaryDictionary/0.1.0 (Ruby 3.3.8)
+      Host:
+      - httpbin.org
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 Jul 2025 06:29:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '439'
+      Connection:
+      - keep-alive
+      Server:
+      - gunicorn/19.9.0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: "{\n  \"args\": {\n    \"test\": \"value\"\n  }, \n  \"headers\": {\n
+        \   \"Accept\": \"application/json\", \n    \"Accept-Encoding\": \"gzip;q=1.0,deflate;q=0.6,identity;q=0.3\",
+        \n    \"Content-Type\": \"application/json\", \n    \"Host\": \"httpbin.org\",
+        \n    \"User-Agent\": \"WiktionaryDictionary/0.1.0 (Ruby 3.3.8)\", \n    \"X-Amzn-Trace-Id\":
+        \"Root=1-68638043-256f3ff5256939a24d253965\"\n  }, \n  \"origin\": \"192.186.103.98\",
+        \n  \"url\": \"https://httpbin.org/get?test=value\"\n}\n"
+  recorded_at: Tue, 01 Jul 2025 06:29:23 GMT
+recorded_with: VCR 6.3.1

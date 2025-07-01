@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mymemory.translated.net/get?langpair=en%7Cfr&q=hello
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - WiktionaryDictionary/0.1.0 (Ruby 3.3.8)
+      Host:
+      - api.mymemory.translated.net
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 01 Jul 2025 06:36:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '829'
+      Connection:
+      - keep-alive
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      X-Backend-Content-Length:
+      - '10'
+      X-Embedded-Status:
+      - '200'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"responseData":{"translatedText":"bonjour","match":1},"quotaFinished":false,"mtLangSupported":null,"responseDetails":"","responseStatus":200,"responderId":null,"exception_code":null,"matches":[{"id":"803894684940690803","segment":"hello","translation":"bonjour","source":"en-GB","target":"fr-FR","quality":"74","reference":null,"usage-count":5,"subject":"All","created-by":"MateCat","last-updated-by":"MateCat","create-date":"2024-12-07
+        15:03:47","last-update-date":"2024-12-07 15:03:47","match":1,"penalty":0},{"id":"803894684981585467","segment":"Hello","translation":"Bonjour","source":"en-GB","target":"fr-FR","quality":74,"reference":null,"usage-count":3,"subject":"","created-by":"MateCat","last-updated-by":"MateCat","create-date":"2025-06-14
+        17:49:21","last-update-date":"2025-06-14 17:49:21","match":0.98,"penalty":0}]}'
+  recorded_at: Tue, 01 Jul 2025 06:36:40 GMT
+recorded_with: VCR 6.3.1
